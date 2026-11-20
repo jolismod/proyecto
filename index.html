@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISPA - Sistema de Alarma Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">SISPA</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyecto">Proyecto</a></li>
+                    <li><a href="#componentes">Componentes</a></li>
+                    <li><a href="#funcionamiento">Funcionamiento</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#simulador-m">Simulador M</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- INICIO (Actualizado con PROTF.jfif) -->
+        <section id="inicio" class="hero">
+            <div class="hero-badge">Innovación CECyTEH Pachuca</div>
+            <h1>SISPA</h1>
+            <p>Sistema de Alarma Inteligente para la Seguridad de la Mujer. Portable, discreto y activado por radiofrecuencia.</p>
+
+            <div class="quick-actions">
+                <button class="action-btn" onclick="openModal('modal-materiales')">📦 Lista de Materiales</button>
+                <button class="action-btn" onclick="openModal('modal-esquema')">🔌 Esquema Técnico</button>
+                <a href="#simulador-m" class="action-btn" style="text-decoration:none;">📡 Probar Simulador M</a>
+            </div>
+
+            <div class="hero-img-container">
+                <img src="img/protf2.jfif" alt="Prototipo físico SISPA" class="hero-img">
+            </div>
+        </section>
+
+        <!-- PROYECTO -->
+        <section id="proyecto">
+            <h2 class="section-title">¿Qué es SISPA?</h2>
+            <p class="section-subtitle">Diseñado con enfoque social, preventivo y de alta portabilidad.</p>
+            <div class="glass-panel">
+                <h3>Tecnología al Servicio de la Protección</h3>
+                <p>SISPA surge como una respuesta directa a la necesidad de contar con dispositivos de salvaguarda personal accesibles y discretos. Su arquitectura permite ocultar la unidad central de procesamiento dentro de un estuche o cajita compacta, dejando un botón de activación rápida al alcance inmediato de la usuaria para disparar alertas a distancia mediante radiofrecuencia sin depender exclusivamente de redes celulares o de internet.</p>
+            </div>
+        </section>
+
+        <!-- COMPONENTES (Con iconos) -->
+        <section id="componentes">
+            <h2 class="section-title">Componentes Principales</h2>
+            <p class="section-subtitle">Hardware integrado en el prototipo físico de laboratorio.</p>
+            <div class="grid-cards">
+                <div class="floating-card">
+                    <div class="card-icon">📟</div>
+                    <h3>Placa Arduino</h3>
+                    <p>Microcontrolador encargado del procesamiento de entradas digitales e impulsos de alerta en tiempo real.</p>
+                </div>
+                <div class="floating-card">
+                    <div class="card-icon">📡</div>
+                    <h3>Módulos RF</h3>
+                    <p>Enlace emisor y receptor inalámbrico de radiofrecuencia para activación remota sin cableado.</p>
+                </div>
+                <div class="floating-card">
+                    <div class="card-icon">🔊</div>
+                    <h3>Buzzer y LEDs</h3>
+                    <p>Elementos de disuasión inmediata mediante advertencia sonora de alta potencia y destello visual.</p>
+                </div>
+                <div class="floating-card">
+                    <div class="card-icon">🔋</div>
+                    <h3>Cajita Portable & Baterías</h3>
+                    <p>Estuche compacto de protección para transportación discreta de bolsillo con energía recargable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNCIONAMIENTO -->
+        <section id="funcionamiento">
+            <h2 class="section-title">Mecánica de Operación</h2>
+            <p class="section-subtitle">Secuencia desde la activación hasta la emisión de la señal de alerta.</p>
+            <div class="steps-container">
+                <div class="step-box">
+                    <div class="step-number">01</div>
+                    <h4>Portación Segura</h4>
+                    <p>El circuito principal permanece oculto en la cajita, manteniendo el botón táctil al alcance.</p>
+                </div>
+                <div class="step-box">
+                    <div class="step-number">02</div>
+                    <h4>Accionamiento</h4>
+                    <p>En caso de riesgo, la usuaria presiona el botón de pánico de manera rápida y discreta.</p>
+                </div>
+                <div class="step-box">
+                    <div class="step-number">03</div>
+                    <h4>Transmisión RF</h4>
+                    <p>El transmisor envía la señal codificada de radiofrecuencia de forma instantánea.</p>
+                </div>
+                <div class="step-box">
+                    <div class="step-number">04</div>
+                    <h4>Alerta Activa</h4>
+                    <p>La placa procesa la instrucción disparando al instante el buzzer y los LEDs de pánico.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACTO SOCIAL -->
+        <section id="impacto">
+            <h2 class="section-title">Impacto Social</h2>
+            <p class="section-subtitle">Diseñado pensando en la tranquilidad y la respuesta inmediata.</p>
+            <div class="impacto-grid">
+                <div class="impacto-card">
+                    <h3>100%</h3>
+                    <p>Portable y Discreto</p>
+                </div>
+                <div class="impacto-card">
+                    <h3>10m</h3>
+                    <p>Alcance de señal RF</p>
+                </div>
+                <div class="impacto-card">
+                    <h3>0</h3>
+                    <p>Dependencia de Internet</p>
+                </div>
+                <div class="impacto-card">
+                    <h3>5V</h3>
+                    <p>Alimentación Segura</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CÓDIGO ARDUINO -->
+        <section id="codigo">
+            <h2 class="section-title">Lógica de Programación</h2>
+            <p class="section-subtitle">Fragmento del código cargado en el microcontrolador.</p>
+            <div class="code-box">
+<pre>
+<span class="comment">// Configuración de pines en Arduino</span>
+<span class="keyword">const int</span> pinBoton = <span class="number">2</span>;
+<span class="keyword">const int</span> pinRF = <span class="number">8</span>;
+<span class="keyword">const int</span> pinBuzzer = <span class="number">10</span>;
+<span class="keyword">const int</span> pinLED = <span class="number">12</span>;
+
+<span class="keyword">void</span> <span class="function">setup</span>() {
+  pinMode(pinBoton, INPUT);
+  pinMode(pinRF, OUTPUT);
+  pinMode(pinBuzzer, OUTPUT);
+  pinMode(pinLED, OUTPUT);
+}
+
+<span class="keyword">void</span> <span class="function">loop</span>() {
+  <span class="keyword">if</span> (digitalRead(pinBoton) == HIGH) {
+    digitalWrite(pinRF, HIGH);    <span class="comment">// Enviar señal</span>
+    digitalWrite(pinBuzzer, HIGH); <span class="comment">// Activar alarma</span>
+    digitalWrite(pinLED, HIGH);    <span class="comment">// Encender luces</span>
+    delay(<span class="number">3000</span>);
+    digitalWrite(pinRF, LOW);
+    digitalWrite(pinBuzzer, LOW);
+    digitalWrite(pinLED, LOW);
+  }
+}
+</pre>
+            </div>
+        </section>
+
+        <!-- GALERÍA (Añadidas las nuevas .jfif y eliminada conexion.jpeg) -->
+        <section id="galeria">
+            <h2 class="section-title">Galería del Prototipo</h2>
+            <p class="section-subtitle">Evidencia fotográfica completa del ensamblaje, cableado y pruebas.</p>
+            <div class="galeria-grid">
+                <div class="galeria-item"><img src="img/PROTF.jfif" alt="Prototipo principal"><div class="galeria-caption">Vista general del prototipo final</div></div>
+                <div class="galeria-item"><img src="img/protf2.jfif" alt="Prototipo 2"><div class="galeria-caption">Ensamblaje del circuito</div></div>
+                <div class="galeria-item"><img src="img/prt20.jfif" alt="Prototipo 20"><div class="galeria-caption">Detalle de los módulos</div></div>
+                <div class="galeria-item"><img src="img/CONEXION4jfif.jfif" alt="Conexión 4"><div class="galeria-caption">Cableado de conexión</div></div>
+                <div class="galeria-item"><img src="img/CON5.jfif" alt="Conexión 5"><div class="galeria-caption">Esquema de conexión final</div></div>
+                
+                <!-- Conservamos las anteriores que sí tienes -->
+                <div class="galeria-item"><img src="img/prot.jpeg" alt="Componente 1"><div class="galeria-caption">Prueba de armado</div></div>
+                <div class="galeria-item"><img src="img/prot1.jpeg" alt="Componente 2"><div class="galeria-caption">Ajuste de pines</div></div>
+                <div class="galeria-item"><img src="img/prot2.jpeg" alt="Componente 3"><div class="galeria-caption">Conexiones en protoboard</div></div>
+                <div class="galeria-item"><img src="img/prot3.jpeg" alt="Componente 4"><div class="galeria-caption">Prueba de continuidad</div></div>
+                <div class="galeria-item"><img src="img/prot4.jpeg" alt="Componente 5"><div class="galeria-caption">Ajuste de módulos</div></div>
+                <div class="galeria-item"><img src="img/prot5.jpeg" alt="Componente 6"><div class="galeria-caption">proseso de armado</div></div>
+                <div class="galeria-item"><img src="img/prot6.jpeg" alt="Componente 7"><div class="galeria-caption">Detalle de cableado</div></div>
+                <div class="galeria-item"><img src="img/prot7.jpg" alt="Componente 8"><div class="galeria-caption">proseso de armado</div></div>
+                <div class="galeria-item"><img src="img/prot9.jpg" alt="Componente 9"><div class="galeria-caption">proseso de armado</div></div>
+                <div class="galeria-item"><img src="img/prot10.jpeg" alt="Componente 10"><div class="galeria-caption">Prueba de sonido</div></div>
+                <div class="galeria-item"><img src="img/prot14.jpeg" alt="Componente 14"><div class="galeria-caption">Cableado de alimentación</div></div>
+                <div class="galeria-item"><img src="img/prot17.jpeg" alt="Componente 17"><div class="galeria-caption">Prueba de alcance</div></div>
+                <div class="galeria-item"><img src="img/prot18.jpeg" alt="Componente 18"><div class="galeria-caption">Empaquetado</div></div>
+                <div class="galeria-item"><img src="img/dia_3.jpeg" alt="Laboratorio"><div class="galeria-caption">Prueba en laboratorio</div></div>
+                <div class="galeria-item"><img src="img/diagrama.jpeg" alt="Diagrama"><div class="galeria-caption">Esquema general</div></div>
+                <div class="galeria-item"><img src="img/exp1.jpeg" alt="Experimento"><div class="galeria-caption">Experimento de campo</div></div>
+            </div>
+        </section>
+
+        <!-- SIMULADOR M -->
+        <section id="simulador-m">
+            <div class="simulator-box">
+                <div class="radar-bg"></div>
+                <h2 style="color: var(--accent); margin-bottom: 0.3rem; position: relative; z-index: 10;">Simulador M - Monitoreo</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem; position: relative; z-index: 10;">Prueba la respuesta lógica de la placa Arduino y la transmisión inalámbrica RF.</p>
+                
+                <div class="m-grid">
+                    <div class="m-card">
+                        <span class="m-title">Botón Pánico</span>
+                        <span id="st-btn" class="status-badge">INACTIVO</span>
+                    </div>
+                    <div class="m-card">
+                        <span class="m-title">Transmisor RF</span>
+                        <span id="st-rf" class="status-badge">STANDBY</span>
+                    </div>
+                    <div class="m-card">
+                        <span class="m-title">Buzzer (Pin 10)</span>
+                        <span id="st-buzzer" class="status-badge">OFF</span>
+                    </div>
+                    <div class="m-card">
+                        <span class="m-title">LEDs (Pin 12)</span>
+                        <span id="st-leds" class="status-badge">OFF</span>
+                    </div>
+                    <div class="m-card">
+                        <span class="m-title">Batería</span>
+                        <span class="status-badge active-green">98% OK</span>
+                    </div>
+                </div>
+
+                <button class="simulator-btn" id="m-trigger-btn">🚨 ACCIONAR BOTÓN DE PÁNICO</button>
+
+                <div style="margin-top: 2rem; text-align: left; font-size: 0.85rem; color: var(--text-muted); font-weight: 600; position: relative; z-index: 10;">LOGS DE PINES EN TIEMPO REAL:</div>
+                <div class="m-terminal" id="terminal-log">
+                    <p>[00:00:00] > Sistema SISPA iniciado. Esperando interrupción en Pin Digital 2...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRÉDITOS -->
+        <section id="creditos">
+            <h2 class="section-title">Créditos del Proyecto</h2>
+            <div class="glass-panel" style="text-align: center;">
+                <h3 style="color: var(--accent);">CECyTEH Plantel Pachuca</h3>
+                <p style="margin: 0.5rem 0 1rem;">Proyecto desarrollado por estudiantes del plantel.</p>
+                <p><strong>Asesor Técnico:</strong> Prof. Carlos Vizcaíno Salinas</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODALES (Actualizados para usar las nuevas imágenes) -->
+    <div id="modal-materiales" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-materiales')">&times;</span>
+            <h3 class="modal-title">📦 Lista Completa de Materiales</h3>
+            <img src="img/diagrama.jpeg" alt="Pinout" class="modal-img">
+            <ul class="modal-list">
+                <li><strong>Protoboard:</strong> Para el ensamble de prueba del circuito físico.</li>
+                <li><strong>Placa Arduino:</strong> Microcontrolador para la lógica de respuesta.</li>
+                <li><strong>Regulador LM2596 Step Down:</strong> Regulación de voltaje de alimentación.</li>
+                <li><strong>Jumpers:</strong> Cables de conexión macho-macho y macho-hembra.</li>
+                <li><strong>Módulos RF:</strong> Comunicación inalámbrica por radiofrecuencia.</li>
+                <li><strong>Buzzer Zumbador:</strong> Emisión de alarma sonora de auxilio.</li>
+                <li><strong>LEDs Indicadores:</strong> Señalización luminosa de advertencia.</li>
+                <li><strong>Baterías Recargables:</strong> Fuente de alimentación portátil autónoma.</li>
+                <li><strong>Cajita / Carcasa:</strong> Estuche de protección para llevar el prototipo oculto.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-esquema" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-esquema')">&times;</span>
+            <h3 class="modal-title">🔌 Arquitectura de Conexiones</h3>
+            <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Diagramas del transmisor y receptor:</p>
+            <img src="img/diagrama.jpeg" alt="Diagrama del Transmisor" class="modal-img">
+            <!-- Reemplazado conexion.jpeg por las nuevas -->
+            <img src="img/CONEXION4jfif.jfif" alt="Diagrama del Receptor 1" class="modal-img">
+            <img src="img/CON5.jfif" alt="Diagrama del Receptor 2" class="modal-img">
+            <ul class="modal-list">
+                <li><strong>Pin Digital 2:</strong> Entrada del Botón de Pánico (Switch).</li>
+                <li><strong>Pin Digital 8:</strong> Salida de datos hacia el módulo Transmisor RF.</li>
+                <li><strong>Pin Digital 10:</strong> Salida de activación al Buzzer Acústico.</li>
+                <li><strong>Pin Digital 12:</strong> Salida a Indicadores LED de Destello.</li>
+                <li><strong>VCC y GND:</strong> Alimentación a 5V desde el módulo de baterías recargables.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SISPA - CECyTEH Pachuca. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
